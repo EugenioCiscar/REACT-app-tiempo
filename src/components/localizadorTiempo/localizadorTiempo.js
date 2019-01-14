@@ -1,9 +1,14 @@
 import React, { Component} from 'react';
 import Localizador from './localizador/localizador';
+import serviceApi from '../../services/serviceApi';
 
-const location ="Valencia";
-class LocalizadorTiempo extends Component{
+const location ="Valencia, es";
 
+class LocalizadorTiempo extends Component
+{
+        componentDidMount() {
+            let data= serviceApi.getData()
+        }
 
     render() {
 
